@@ -138,6 +138,21 @@ namespace FontSquirrelSharp
             }
         }
 
+        public string GetFontUrl(string familyUrlName)
+        {
+            return $"https://www.fontsquirrel.com/fonts/{familyUrlName}";
+        }
+
+        public string GetFoundryUrl(string foundryUrlName)
+        {
+            return $"https://www.fontsquirrel.com/fonts/list/foundry/{foundryUrlName}";
+        }
+
+        public string GetLicenseUrl(string familyUrlName)
+        {
+            return $"https://www.fontsquirrel.com/license/{familyUrlName}";
+        }
+
         public void Dispose()
         {
             httpClient.Dispose();

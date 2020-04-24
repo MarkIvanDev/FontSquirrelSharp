@@ -7,10 +7,10 @@
 
   <PropertyGroup>
     <PackageId>FontSquirrelSharp</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Title>FontSquirrelSharp</Title>
     <Authors>markivan.basto</Authors>
-    <Description>Wrapper for the Font Squirrel API</Description>
+    <Description>Unofficial Wrapper for the Font Squirrel API</Description>
     <Copyright>(c) 2020 Mark Ivan Basto</Copyright>
     <PackageProjectUrl>https://github.com/MarkIvanDev/FontSquirrelSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MarkIvanDev/FontSquirrelSharp.git</RepositoryUrl>
