@@ -7,7 +7,7 @@
 
   <PropertyGroup>
     <PackageId>FontSquirrelSharp</PackageId>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <Title>FontSquirrelSharp</Title>
     <Authors>markivan.basto</Authors>
     <Description>Unofficial Wrapper for the Font Squirrel API</Description>

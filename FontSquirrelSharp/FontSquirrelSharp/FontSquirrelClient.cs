@@ -21,7 +21,6 @@
 // SOFTWARE.
 
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -34,13 +33,11 @@ namespace FontSquirrelSharp
     public class FontSquirrelClient : IDisposable
     {
         private readonly HttpClient httpClient;
-        private readonly ITraceWriter traceWriter;
 
-        public FontSquirrelClient(ITraceWriter traceWriter)
+        public FontSquirrelClient()
         {
             httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("https://www.fontsquirrel.com/");
-            this.traceWriter = traceWriter;
         }
 
         public async Task<Collection<Classification>> GetClassifications()
@@ -105,7 +102,7 @@ namespace FontSquirrelSharp
                 if (response.IsSuccessStatusCode)
                 {
                     var json = await response.Content.ReadAsStringAsync();
-                    var info = JsonConvert.DeserializeObject<Collection<Family>>(json, new JsonSerializerSettings() { TraceWriter = traceWriter });
+                    var info = JsonConvert.DeserializeObject<Collection<Family>>(json);
                     return info.FirstOrDefault();
                 }
                 return default;

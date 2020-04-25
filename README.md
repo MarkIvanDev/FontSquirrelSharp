@@ -1,2 +1,2 @@
 # FontSquirrelSharp
-Wrapper for the Font Squirrel API
+Unofficial Wrapper for the Font Squirrel API
